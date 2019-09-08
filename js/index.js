@@ -83,3 +83,12 @@ let bottomTextContent = document.querySelectorAll('.bottom-content .text-content
 bottomTextContent[0].textContent = siteContent['main-content']['services-content'];
 bottomTextContent[1].textContent = siteContent['main-content']['product-content'];
 bottomTextContent[2].textContent = siteContent['main-content']['vision-content'];
+
+let contactTitle = document.querySelector('.contact h4');
+contactTitle.textContent = siteContent['contact']['contact-h4'];
+
+let contactInfo = document.querySelectorAll('.contact p');
+contactInfo[0].textContent = siteContent['contact']['address'];
+contactInfo[1].textContent = siteContent['contact']['phone'];
+contactInfo[2].textContent = siteContent['contact']['email'];
+
