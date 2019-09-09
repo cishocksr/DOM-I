@@ -43,6 +43,11 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 // Nav bar
 
+let navigation = document.querySelectorAll('a');
+navigation.forEach(function(item) {
+  item.style.color = 'green'
+});
+
 let navItems = document.getElementsByTagName('a');
 navItems[0].textContent = siteContent['nav']['nav-item-1'];
 navItems[1].textContent = siteContent['nav']['nav-item-2'];
@@ -51,7 +56,7 @@ navItems[3].textContent = siteContent['nav']['nav-item-4'];
 navItems[4].textContent = siteContent['nav']['nav-item-5'];
 navItems[5].textContent = siteContent['nav']['nav-item-6'];
 
-//cta
+
 
 let titleText = document.querySelector('h1');
 titleText.textContent = (siteContent['cta']['h1']);
@@ -61,6 +66,7 @@ ctaButton.textContent = (siteContent['cta']['button']);
 
 let ctaLogo = document.getElementById('cta-img');
 ctaLogo.setAttribute('src', siteContent['cta']['img-src']);
+
 
 // main content
 let topTextTitle = document.querySelectorAll('.top-content h4')
@@ -93,6 +99,5 @@ contactInfo[1].textContent = siteContent['contact']['phone'];
 contactInfo[2].textContent = siteContent['contact']['email'];
 
 let footerInfo = document.querySelector('footer p');
-console.log(footerInfo)
 
 footerInfo.textContent = (siteContent['footer']['copyright']);
