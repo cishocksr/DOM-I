@@ -92,3 +92,7 @@ contactInfo[0].textContent = siteContent['contact']['address'];
 contactInfo[1].textContent = siteContent['contact']['phone'];
 contactInfo[2].textContent = siteContent['contact']['email'];
 
+let footerInfo = document.querySelector('footer p');
+console.log(footerInfo)
+
+footerInfo.textContent = (siteContent['footer']['copyright']);
